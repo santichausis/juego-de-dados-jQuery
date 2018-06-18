@@ -14,6 +14,10 @@ var roundScore = 0;
 var activePLayer = 0;
 var gamePlaying = true;
 
+var player1 = prompt("Nombre del jugador 1:");
+var player2 = prompt("Nombre del jugador 2:");
+
+
 init();
 
 // Tirar dado
@@ -81,8 +85,8 @@ function init() {
         // Player 1 y 2 acumulado en 0
         $('#current-0').text('0');
         $('#current-1').text('0');
-        $('#name-0').text('Player 1');
-        $('#name-1').text('Player 2');
+        $('#name-0').text(player1);
+        $('#name-1').text(player2);
         $('.player-0-panel').removeClass('winner');
         $('.player-1-panel').removeClass('winner');
         // Deja al Player 1 como jugador Activo
